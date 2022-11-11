@@ -8,7 +8,8 @@ const livroSchema = new mongoose.Schema(
         //transformar o autor em chave estrangeira
         // autor: {type: String, required:true},
         autor: {type: mongoose.Schema.Types.ObjectId, ref: 'autores', required: true},
-        editora: {type: String, required: true},
+        // editora: {type: String, required: true},
+        editora: {type: mongoose.Schema.Types.ObjectId, ref: 'editoras', required: true},
         numeroPaginas: {type: Number}
     }
 );

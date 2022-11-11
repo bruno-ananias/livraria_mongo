@@ -7,6 +7,7 @@ class LivroController{
        //Transformar o campo autor em chave estrangeira
         livros.find()
         .populate('autor')
+        .populate('editora')
         .exec((err, livros) => {
             res.status(200).json(livros)
         })

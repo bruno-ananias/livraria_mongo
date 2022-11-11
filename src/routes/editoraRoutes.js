@@ -9,6 +9,6 @@ router
     .get("/editoras/:id", EditoraController.listarEditoraPorId)
     .post("/editoras", EditoraController.cadastrarEditora)
     .put("/editoras/:id", EditoraController.atualizarEditora)
-    .delete("/editoras:id", EditoraController.excluirEditora)
+    .delete("/editoras/:id", EditoraController.excluirEditora)
 
 export default router
